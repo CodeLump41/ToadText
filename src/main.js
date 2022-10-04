@@ -1,9 +1,12 @@
-const { createApp = vue };
+import { createApp } from "https://unpkg.com/vue@3/dist/vue.global.js";
 
-createApp({
-    data() {
-        return {
-            count: 0
+
+const app = createApp({
+    data(){
+        return{
+            message: "Hello World!"
         }
     }
-})
+});
+
+app.mount("#app");
