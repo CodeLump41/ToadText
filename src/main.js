@@ -1,9 +1,9 @@
-import { createApp } from "https://unpkg.com/vue@3/dist/vue.global.js";
+import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
 createApp({
-    data() {
-      return {
-        message: 'Hello Vue!'
-      }
+  data() {
+    return {
+      message: 'Hello Vue!'
     }
-  }).mount('#app')
+  }
+}).mount('#app')
