@@ -1,5 +1,9 @@
-function main() {
-    alert("Hello World!")
-}
+const { createApp = vue };
 
-window.onload("main");
+createApp({
+    data() {
+        return {
+            count: 0
+        }
+    }
+})
