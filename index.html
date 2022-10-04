@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script type="inportmap">
+    {
+        "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+    }
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +17,13 @@
 </head>
 
 <body>
-  <div id="app">{{message}}</div>
+    <div id="app">
+        <button @click="count++">{{count}}</button>
+    </div>
 </body>
 
 <script src="./src/main.js" type="module">
 
 </script>
+
 </html>
